@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Chart.js Test</title>
+    <script src="js/Chart.js/Chart.js"></script>
+  </head>
+  <body>
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script>
+      var data = [
+          {
+              value: 200,
+              color:"#F7464A",
+              highlight: "#FF5A5E",
+              label: "Amount Paid"
+          },
+          {
+              value: 300,
+              color: "#46BFBD",
+              highlight: "#5AD3D1",
+              label: "Amount Saved"
+          }
+      ];
+
+      // Draw chart
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var myDoughnutChart = new Chart(ctx).Doughnut(data);
+
+      // var options = [];
+    </script>
+  </body>
+</html>
